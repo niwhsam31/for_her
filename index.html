@@ -6,55 +6,52 @@
 <title>For My Anuradha ❤️</title>
 
 <style>
-*{
-    box-sizing:border-box;
-}
+*{box-sizing:border-box;}
 
 body{
     margin:0;
     font-family:'Segoe UI', sans-serif;
-    background:linear-gradient(135deg,#ff758c,#ff7eb3);
+    background:linear-gradient(135deg,#ffb6c1,#ffc3d8);
     min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
-    padding:15px;
+    padding:14px;
 }
 
-/* Hide audio controls */
-audio{ display:none; }
+audio{display:none;}
 
-/* MAIN CARD */
 .container{
-    background:white;
+    background:#fff;
     width:100%;
     max-width:420px;
-    border-radius:22px;
-    padding:25px 18px;
-    box-shadow:0 20px 45px rgba(0,0,0,0.25);
-    animation:fadeIn 1.2s ease;
+    border-radius:24px;
+    padding:26px 20px;
+    box-shadow:0 18px 40px rgba(0,0,0,0.22);
+    animation:fadeIn 1.6s ease;
 }
 
-/* GLOWING NAME */
+/* NAME */
 h1{
     text-align:center;
-    font-size:32px;
+    font-size:34px;
     margin:10px 0;
-    color:#ff4d6d;
-    text-shadow:0 0 10px #ff4d6d, 0 0 22px #ff9fb2;
-    animation:glow 2s infinite alternate;
+    color:#ff3e6c;
+    text-shadow:0 0 12px rgba(255,62,108,0.6);
+    animation:glow 3s infinite alternate;
 }
 
 @keyframes glow{
-    from{ text-shadow:0 0 10px #ff4d6d; }
-    to{ text-shadow:0 0 26px #ff1e50; }
+    from{ text-shadow:0 0 10px rgba(255,62,108,0.5);}
+    to{ text-shadow:0 0 28px rgba(255,62,108,0.9);}
 }
 
 .subtitle{
     text-align:center;
     font-size:14px;
-    color:#666;
-    margin-bottom:20px;
+    color:#777;
+    margin-bottom:22px;
+    line-height:1.6;
 }
 
 /* GALLERY */
@@ -66,90 +63,90 @@ h1{
 
 .gallery img{
     width:100%;
-    height:170px;
+    height:175px;
     object-fit:cover;
-    border-radius:16px;
+    border-radius:18px;
     cursor:pointer;
-    transition:0.3s;
+    transition:0.4s;
 }
 
 .gallery img:active{
-    transform:scale(0.97);
+    transform:scale(0.96);
 }
 
-/* FULLSCREEN IMAGE */
+/* FULLSCREEN */
 .fullscreen{
     position:fixed;
     inset:0;
-    background:rgba(0,0,0,0.92);
+    background:rgba(0,0,0,0.93);
     display:none;
     justify-content:center;
     align-items:center;
-    z-index:99;
+    z-index:100;
 }
 
 .fullscreen img{
     max-width:92%;
     max-height:88%;
-    border-radius:18px;
+    border-radius:20px;
 }
 
 .fullscreen span{
     position:absolute;
-    top:15px;
-    right:20px;
+    top:16px;
+    right:22px;
     font-size:32px;
     color:white;
 }
 
 /* HEART */
 .heart{
-    font-size:40px;
+    font-size:42px;
     text-align:center;
-    margin:18px 0;
-    animation:beat 1.3s infinite;
+    margin:20px 0;
+    animation:beat 1.5s infinite;
 }
 
 @keyframes beat{
     0%{transform:scale(1);}
-    50%{transform:scale(1.25);}
+    50%{transform:scale(1.28);}
     100%{transform:scale(1);}
 }
 
 /* MESSAGE */
 .message{
     text-align:center;
-    font-size:16px;
-    line-height:1.7;
+    font-size:16.5px;
+    line-height:1.75;
     color:#444;
 }
 
-/* FINAL QUESTION */
+/* PROPOSAL */
 .proposal{
-    margin-top:25px;
+    margin-top:28px;
     text-align:center;
-    font-size:26px;
-    color:#ff1e50;
+    font-size:27px;
+    color:#ff2f68;
     opacity:0;
-    animation:appear 1.8s ease forwards;
-    animation-delay:2.5s;
+    animation:appear 2.2s ease forwards;
+    animation-delay:3s;
 }
 
 @keyframes appear{
-    from{opacity:0; transform:translateY(20px);}
+    from{opacity:0; transform:translateY(22px);}
     to{opacity:1; transform:translateY(0);}
 }
 
 .signature{
     text-align:right;
-    margin-top:20px;
+    margin-top:22px;
     font-size:13px;
     font-style:italic;
-    color:#777;
+    color:#888;
 }
 
 @keyframes fadeIn{
-    from{opacity:0; transform:translateY(25px);}
+    from{opacity:0; transform:translateY(28px);}
     to{opacity:1; transform:translateY(0);}
 }
 </style>
@@ -157,7 +154,7 @@ h1{
 
 <body>
 
-<!-- 🎶 BACKGROUND MUSIC -->
+<!-- SOFT MUSIC -->
 <audio autoplay loop>
     <source src="song.mp3" type="audio/mpeg">
 </audio>
@@ -166,32 +163,41 @@ h1{
 
     <h1>Anuradha ❤️</h1>
     <div class="subtitle">
-        Some people feel like magic…  
-        and you are mine ✨
+        Some souls don’t just enter your life…  
+        they slowly become your favorite feeling ✨
     </div>
 
     <div class="gallery">
-        <img src="./photo1.jpg" onclick="openFull(this)">
-        <img src="./photo2.jpg" onclick="openFull(this)">
-        <img src="./photo3.jpg" onclick="openFull(this)">
-        <img src="./photo4.jpg" onclick="openFull(this)">
+        <img src="photo1.jpg" onclick="openFull(this)">
+        <img src="photo2.jpg" onclick="openFull(this)">
+        <img src="photo3.jpg" onclick="openFull(this)">
+        <img src="photo4.jpg" onclick="openFull(this)">
     </div>
 
     <div class="heart">❤️</div>
 
     <div class="message">
-        Every smile of yours feels peaceful,  
-        every moment with you feels right.  
+        Loving you never felt like a choice,  
+        it felt like something my heart already knew.  
 
         <br><br>
 
-        I love you quietly,  
+        In your presence, everything feels lighter,  
+        quieter,  
+        more meaningful.  
+
+        <br><br>
+
+        I don’t need forever promises…  
+        I just want *you*,  
+        in every little tomorrow I dream of.  
+
+        <br><br>
+
+        I love you —  
         deeply,  
-        endlessly.  
-
-        <br><br>
-
-        I love you so so so much ❤️
+        softly,  
+        endlessly ❤️
     </div>
 
     <div class="proposal">
@@ -214,7 +220,6 @@ function openFull(img){
     document.getElementById("full").style.display="flex";
     document.getElementById("fullImg").src = img.src;
 }
-
 function closeFull(){
     document.getElementById("full").style.display="none";
 }
